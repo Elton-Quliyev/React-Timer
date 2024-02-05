@@ -12,7 +12,7 @@ const TimeCounter = ({ deqiqe, saniye }) => {
         setIsTimerRunning(false);
       } else {
         setSecond((second) => (second === 0 ? 59 : second - 1));
-        setMinute((prevMinute) =>
+        setMinute((minute) =>
           second === 0 ? (minute > 0 ? minute - 1 : 0) : minute
         );
       }
